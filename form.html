@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+
+</form>
+<form id='register' class='input-group-register'>
+    <label for="">First Name:</label><input type='text' id="fname" class='input-field' pattern="[A-Z,a-z]{4,16}" title="First name should contain 4-16 characters only"  required>
+    <label for="">Last Name:</label><input type='text' id="laname" class='input-field' pattern="[A-Z,a-z]{1,16}" title="Last name should contain 1-16 characters only"  required>
+    <label for="">Email Id:</label><input type='email' id="email" class='input-field' required>
+    <label for="">Password:</label><input type='password' id="pass" class='input-field' pattern="[A-Z,0-9,a-z]{8,16}" title="Password must contain 1 uppercase, 1 lowercase, numbers & 8-16 characters"  required>
+    <label for="">Confirm Password:</label><input type='password' id="con" class='input-field' pattern="[A-Z,0-9,a-z]{8,16}" title="Must be same as password field"  required>
+    <label for=""  id="gen" class="input-field1"> Gender: </label><br>
+    <input type="radio" name="Gender" id="gender1"> <label for="" class="input-field">Male </label> 
+     <input type="radio" name="Gender" id="gender2"><label for="" class="input-field"> Female </label> 
+    <input type="radio" name="Gender" id="gender2"><label for="" class="input-field"> Others </label><br>
+    <input type='checkbox' id="check" class='check-box' required> <label for="">I agree to the terms and conditions</label>
+
+           <button type='submit' id="res" class='submit-btn'>Register</button>
+         
+    </form>
+</body>
+    </html>
+    

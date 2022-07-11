@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Donate page</title>
+<script>
+    function showAlert() {
+      alert ("Do you want to submit?");
+    }
+    </script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<style>
+    h1{
+        font-size: 25px;
+        color: rgb(3, 0, 5);
+    }
+    body {
+      background-image: url('https://thumbs.dreamstime.com/z/donations-charty-donation-concept-box-white-background-inscription-donate-153541968.jpg');
+ 
+    }
+    </style>
+    <body style=" background-color:rgb(210, 226, 232)";>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Giving is not just about make a donation,<br>
+        it's about making a difference!</h1>
+        
+        <body>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"pattern="[A-Z,a-z]{4,16}" title="First name should contain 4-16 characters only"  required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"pattern="[A-Z,a-z]{1,16}" title="Last name should contain 1-16 characters only"  required><br>
+        <label for="dob">Date of birth:</label><br>
+        <input type="date" name="dob" id="dob" placeholder="Enter Date Of Birth"required><br>
+        <label for="Phone Number">Phone Number:</label><br>
+        <input type="tel" id="Phone Number" name="Phone Number"pattern="[0-9]{10}" title="Phone number must contain 10 digits"  required>
+        <p>Donation:</p>
+        <input type="radio" id="finance" name="Donation" value="Finance">
+        <label for="finance">Finance</label><br>
+        <input type="radio" id="books" name="Donation" value="Books">
+        <label for="books">Books</label><br>
+        <input type="radio" id="cloths" name="Donation" value="Cloths">
+        <label for="cloths">Cloths</label><br>
+        <input type="radio" id="food" name="Donation" value="Food">
+        <label for="food">Food</label><br>
+        <label for="bank details">Bank Name:</label><br>
+        <input type="text" id="bank details" name="bank details"pattern="[a-z,A-Z]{4-16} "title="Bank Name should contain 1-16 characters only"  required><br>
+        <label for="ifsc">IFSC code:</label><br>
+        <input type="text" id="ifsc" name="ifsc" pattern="[0-9,A-Z,a-z]{8-10}" title="IFSC  must contain 10 integers only"  required><br>
+        <label for="accno">Account number:</label><br>
+       <input type="tel" id="acno" name="acno"pattern="[0-9]{10-16}" title="IFSC  must contain 10 integers only"  required><br>
+       <button id="submit" onclick="showAlert()">Submit</button>
+    </form>
+
+
+   
+</body>
+</html>

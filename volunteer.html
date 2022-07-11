@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+.box{
+    background-image:url('vol.jpg');
+    height: 480px;
+    width: 1300px;
+}
+.box:hover{
+    background-color: rgb(122, 137, 137);
+    box-shadow: 10px 15px 15px 20px rgb(107, 105, 105);
+}
+body{
+    background-color: antiquewhite;
+}
+form{
+    width: 200px;
+    margin: 50px auto 0px auto;
+}
+h2{
+   
+    text-align: center;
+}
+.box1:hover{
+    background-color: rgba(226, 166, 216, 0.26);
+    box-shadow: 10px 15px 15px 20px rgba(128, 0, 0, 0.048);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <br>
+    <br>
+    <div class="container1">
+        
+         <h3 style ="background-color:grey;color:white;">Volunteer</h3> 
+         <p style="font-family:serif ;"> Become a volunteer. We're sure we are not the only compassionate people in this world.
+        Giving your precious time, energy, and skill to a worthwhile activity in your community makes all the difference!</p>
+        </div>
+    
+    
+    <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Volunteer Registration</h2>
+    <form id="Register" method="post">
+    <label>First Name: </label>
+    <br>
+    <input type="text" name="fname" id="fname" placeholder="Enter Your First Name" class='input-field' pattern="[A-Z,a-z]{4,16}" title="First name should contain 4-16 characters only" required>
+    <br><br>
+    <label>Last Name: </label>
+    <br>
+    <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name" class="input-field" pattern="[A-Z,a-z]{1,16}" title="Last name should contain 1-16 characters only" required>
+    <br><br>
+    <label>DOB: </label>
+    <br>
+    <input type="date" name="Date of Birth" id="birthday" placeholder="Enter Date Of Birth" required>
+    <br><br>
+    <label>Email: </label>
+    <br>
+    <input type="email" name="email" id="email" pattern=".+@gmail\.com" placeholder="Enter Your Valid E-mail" required>
+    <br><br>
+    <tr><td>
+    <label>Gender: </label>
+    <br>
+    <td><input type="radio" name="radiobutton1" id="Male">Male
+        <input type="radio" name="radiobutton2" id="Female">Female
+    </td>
+    </tr>
+    <br><br>
+    
+    <input type="submit" value="submit" id="submit">
+    </form>
+    
+
+
+    <p style ="background-color:grey;color: white;">We are Really Proud of Our Kind  Voluntaries.</p>
+        
+</body>
+</html>
